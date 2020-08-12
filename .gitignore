@@ -4,14 +4,10 @@ __pycache__
 *.pyc
 .ipynb_checkpoints
 *~
-*.gexf
 *.zip
-*.gz
 *.egg-info
 *.gephi
 *.hypothesis
-*.csv
-*.tsv
 *.pdf
 data/dowloaded/timestamp.txt
 *.RData
