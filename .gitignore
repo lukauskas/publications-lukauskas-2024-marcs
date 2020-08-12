@@ -8,11 +8,8 @@ __pycache__
 *.egg-info
 *.gephi
 *.hypothesis
-*.pdf
-data/dowloaded/timestamp.txt
 *.RData
 .Rhistory
-scattermaps-cache.h5
 .ssh
 .idea
 output-*
