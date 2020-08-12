@@ -1,0 +1,28 @@
+---
+version: 1
+disable_existing_loggers: False
+formatters:
+    simple:
+        format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: simple
+        stream: ext://sys.stdout
+    log_file_handler:
+        class: logging.FileHandler
+        level: DEBUG
+        formatter: simple
+        filename: /log/snap.log
+        encoding: utf8
+loggers:
+  snapanalysis:
+      level: DEBUG
+      handlers: [console, log_file_handler]
+      propagate: no
+  root:
+      level: INFO
+      handlers: [console, log_file_handler]
+...
