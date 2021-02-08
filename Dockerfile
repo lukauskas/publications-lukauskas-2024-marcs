@@ -86,7 +86,7 @@ RUN \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table Proteins.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure pairwise comparisons.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure pairwise gaps.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure response clusters.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table response clusters.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/network/Table Network.ipynb"
 
 # Based on neat script here: https://www.r-bloggers.com/list-of-user-installed-r-packages-and-their-versions/
