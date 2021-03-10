@@ -66,28 +66,30 @@ COPY extra-figures-notebooks /notebooks
 RUN \
     # Metadata
     jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/metadata/Figure Nucleosome Map.ipynb" \
+    # Network table
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/network/Table Network.ipynb" \
     # Preprocessing
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplot Grids.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/preprocessing/Figure Preprocessing Workflow.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/preprocessing/Figure imputation statistics.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/preprocessing/Figure Imputation Statistics.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/preprocessing/Table Pull-Down Data.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/preprocessing/Table Pull-Down Heatmap.ipynb" \
-    # Scatterplots
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplots Highlights.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Annotated Scatterplots.ipynb" \
-    # PTM responses
-    && jupyter nbconvert --ExecutePreprocessor.timeout=2400 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure method description.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Complexes.ipynb" \
+    # PTM response figures ()
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Complexes Barplots.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=2400 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Complexes Heatmaps.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Counts.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=2400 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Method Description.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Network Projection.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure counts.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Complex Barplots.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Pairwise Comparisons.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Pairwise Gaps.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure Volcanoes.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table Complexes.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table Proteins.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure pairwise comparisons.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Figure pairwise gaps.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table response clusters.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/network/Table Network.ipynb"
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/ptm-response/Table Response Clusters.ipynb" \
+    # Scatterplots
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Annotated Scatterplots.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplots Highlights.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplot Grids.ipynb" \
+
 
 # Based on neat script here: https://www.r-bloggers.com/list-of-user-installed-r-packages-and-their-versions/
 RUN Rscript -e 'p <- as.data.frame(installed.packages()[,c(1,3:4)]); rownames(p) <- NULL; p <- p[is.na(p$Priority),1:2,drop=FALSE]; print(p, row.names=FALSE)' > $SNAPANALYSIS_OUTPUT/r-packages.txt \
