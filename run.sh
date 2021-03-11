@@ -4,10 +4,13 @@ set -ex
 # https://stackoverflow.com/questions/36335186/bash-exit-and-cleanup-on-error
 clean_up () {
     ARG=$?
-    echo "Got error, cleaning up"
-    docker stop snapanalysis_cont || echo "Tried stopping snapanalysis_cont, didn't work"
-    docker rm snapanalysis_cont || echo "Tried removing snapanalysis_cont, didn't work"
-    exit $ARG
+    if [ $ARG -ne 0 ]
+    then
+        echo "Got error, code=$ARG, cleaning up"
+        docker stop snapanalysis_cont || echo "Tried stopping snapanalysis_cont, didn't work"
+        docker rm snapanalysis_cont || echo "Tried removing snapanalysis_cont, didn't work"
+        exit $ARG
+    fi
 }
 trap clean_up EXIT
 

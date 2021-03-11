@@ -88,7 +88,7 @@ RUN \
     # Scatterplots
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Annotated Scatterplots.ipynb" \
     && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplots Highlights.ipynb" \
-    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplot Grids.ipynb" \
+    && jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute --output /dev/null "/notebooks/scatterplots/Figure Scatterplot Grids.ipynb" 
 
 
 # Based on neat script here: https://www.r-bloggers.com/list-of-user-installed-r-packages-and-their-versions/
