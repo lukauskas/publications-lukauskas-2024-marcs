@@ -1,3 +1,5 @@
+![CC-BY-NC-SA badge](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)
+
 MARCS Analysis Code
 ==============================
 
@@ -149,3 +151,9 @@ repository with the dataset identifier [PXD018966](http://proteomecentral.proteo
 ## References
 
 Perez-Riverol Y, Csordas A, Bai J, Bernal-Llinares M, Hewapathirana S, Kundu DJ, Inuganti A, Griss J, Mayer G, Eisenacher M, Pérez E, Uszkoreit J, Pfeuffer J, Sachsenberg T, Yilmaz S, Tiwary S, Cox J, Audain E, Walzer M, Jarnuczak AF, Ternent T, Brazma A, Vizcaíno JA (2019). The PRIDE database and related tools and resources in 2019: improving support for quantification data. Nucleic Acids Res 47(D1):D442-D450 (PubMed ID: 30395289).
+
+## License
+
+![CC-BY-NC-SA badge (large)](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
