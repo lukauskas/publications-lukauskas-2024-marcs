@@ -1,0 +1,14 @@
+name: marcs-chipseq-example
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pandas=1.4.1
+  - numpy=1.22.3
+  - scipy=1.8.0
+  - jupyterlab=3.3.2
+  - bedtools=2.30.0
+  - pybedtools=0.9.0
+  - hdf5=1.12.1
+  - pytables=3.7.0

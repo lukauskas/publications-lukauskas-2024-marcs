@@ -1,0 +1,14 @@
+slurm-*.out
+output
+.snakemake
+__pycache__
+*.pyc
+*~
+.ipynb_checkpoints
+.nb-testing-outputs
+.DS_Store
+.tmp-pybedtools
+.tmp
+._.DS_Store
+.DS_Store
+._*

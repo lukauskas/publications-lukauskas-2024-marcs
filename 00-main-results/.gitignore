@@ -1,0 +1,15 @@
+~*
+__pycache__
+*.DS_Store
+*.pyc
+.ipynb_checkpoints
+*~
+*.zip
+*.egg-info
+*.gephi
+*.hypothesis
+*.RData
+.Rhistory
+.ssh
+.idea
+output-*

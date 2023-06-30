@@ -1,0 +1,37 @@
+# Directories
+DATA_DIR: 'data/'
+OUTPUT_DIR: 'output/final'
+INTERIM_OUTPUT_DIR: 'output/interim'
+
+# MARCS params
+MARCS_FEATURE_FDR: 0.01
+MARCS_FEATURE_FC_THRESHOLD: 1.0
+
+# Writing params
+GENE_LABEL_SEPARATOR_FOR_PEAKLISTS: '||'
+
+# Cell lines selected for analysis
+ANALYSIS_CELL_LINES: 
+  - HepG2
+  - K562
+
+# Bin size (resolution) which is used to create the bed file matrix 
+BIN_SIZES: [1000]
+
+CORRELATION_TYPE: 'kendall'
+# Minimum number of overlapping regions needed to compute correlation
+# Note that this parameter has no effect if Kendall correlation selected above
+# See https://archive.ph/g1sQK
+MIN_PERIODS_FOR_CORRELATIONS: [1]
+
+# Pseudocount for MI and other statistics
+STATISTICS_PSEUDOCOUNTS: [100]
+
+
+ROADMAP_CELL_LINE_MAP:
+  HepG2: "E118"
+  K562: "E123"
+
+DEEPTOOLS_SLOP_LEFT: 3000
+DEEPTOOLS_SLOP_RIGHT: 3000
+

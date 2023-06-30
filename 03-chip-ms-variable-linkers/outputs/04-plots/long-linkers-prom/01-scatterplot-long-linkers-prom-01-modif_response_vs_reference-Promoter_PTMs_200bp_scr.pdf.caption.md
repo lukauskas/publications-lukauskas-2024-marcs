@@ -1,0 +1,90 @@
+
+Scatterplot of the log2 differences in protein responses in the experimental conditions.
+On the x axis, log2(Promoter_PTMs/unmodH3_unmodH4) using 50bp linker is plotted. On the y axis log2(Promoter_PTMs/unmodH3_unmodH4) using 200bp_scr linker is plotted.
+
+Each marker corresponds to a protein in the dataset. The colour of the markers indicates the classification of proteins into:
+
+1. Modification-responsive (red), i.e. proteins which exhibit a statistically significant and strong effect in `modif_Promoter_PTMs_vs_unmodH3_unmodH4_200bp_scr` or `modif_Promoter_PTMs_vs_unmodH3_unmodH4_50bp`.
+2. Linker-responsive (blue), i.e. proteins which exhibit a statistically significant and strong effect in `linker_200bp_scr_vs_50bp_Promoter_PTMs` or `linker_200bp_scr_vs_50bp_unmodH3_unmodH4`.
+3. Modification and linker responsive (purple), i.e. proteins which exhibit 1 and 2 above.
+
+Proteins highlighted in grey correspond to the normalisation controls.
+Smaller marker sizes indicate effect estimates that were made on a single datapoint only.
+Triangular markers indicate presence of proteins which are out of axis bounds.
+
+Such proteins are listed below:
+
+   - ACTR5: (x=inf, y=3.96, `modif_significant=True`, `linker_significant=False`)
+   - ARID2: (x=inf, y=7.96, `modif_significant=True`, `linker_significant=False`)
+   - ARID4B: (x=inf, y=1.77, `modif_significant=True`, `linker_significant=True`)
+   - BACH1: (x=-inf, y=0.07, `modif_significant=False`, `linker_significant=False`)
+   - BICRA: (x=3.21, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - BICRAL: (x=-0.00, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - BRD3: (x=inf, y=10.17, `modif_significant=True`, `linker_significant=False`)
+   - C14orf93: (x=-inf, y=-0.80, `modif_significant=False`, `linker_significant=True`)
+   - CABIN1: (x=inf, y=-0.33, `modif_significant=False`, `linker_significant=False`)
+   - CD58: (x=-inf, y=0.39, `modif_significant=False`, `linker_significant=False`)
+   - CENPI: (x=-inf, y=-0.33, `modif_significant=False`, `linker_significant=False`)
+   - CSNK2A2: (x=0.63, y=inf, `modif_significant=False`, `linker_significant=True`)
+   - CXXC1: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - ELL2: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - EPC1: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - ERCC3: (x=inf, y=1.81, `modif_significant=True`, `linker_significant=True`)
+   - GTF2A2: (x=inf, y=6.66, `modif_significant=True`, `linker_significant=False`)
+   - GTF3C3: (x=inf, y=0.64, `modif_significant=False`, `linker_significant=False`)
+   - HMGXB4: (x=inf, y=5.84, `modif_significant=True`, `linker_significant=False`)
+   - ING1: (x=inf, y=2.36, `modif_significant=True`, `linker_significant=False`)
+   - ING3: (x=inf, y=2.85, `modif_significant=True`, `linker_significant=False`)
+   - INO80D: (x=inf, y=4.52, `modif_significant=True`, `linker_significant=False`)
+   - ITPR1: (x=1.32, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - JMJD6: (x=inf, y=3.92, `modif_significant=True`, `linker_significant=False`)
+   - KANSL2: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - KAT14: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - KAT2A: (x=2.23, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - KAT6A: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - KDM4C: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - LIN9: (x=inf, y=-0.04, `modif_significant=False`, `linker_significant=True`)
+   - LZTS3: (x=-0.25, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - MBIP: (x=inf, y=3.64, `modif_significant=True`, `linker_significant=False`)
+   - MBTD1: (x=0.77, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - MLLT3: (x=5.76, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - MNT: (x=inf, y=0.64, `modif_significant=False`, `linker_significant=False`)
+   - MTX3: (x=-0.39, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - MYBL1: (x=inf, y=0.63, `modif_significant=False`, `linker_significant=True`)
+   - NFAT5: (x=inf, y=1.49, `modif_significant=False`, `linker_significant=True`)
+   - NFRKB: (x=inf, y=6.27, `modif_significant=True`, `linker_significant=False`)
+   - NR2C2: (x=inf, y=0.20, `modif_significant=False`, `linker_significant=False`)
+   - NSD3: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - NUP107: (x=-1.68, y=-inf, `modif_significant=True`, `linker_significant=False`)
+   - NUP210: (x=-inf, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - NUP54: (x=-inf, y=-inf, `modif_significant=False`, `linker_significant=True`)
+   - POLR2A: (x=-inf, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - PPP1R26: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - PRDM2: (x=inf, y=0.13, `modif_significant=False`, `linker_significant=False`)
+   - SMARCA2: (x=4.79, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - SMARCA4: (x=inf, y=5.88, `modif_significant=True`, `linker_significant=False`)
+   - SMARCD1: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - SP3: (x=-inf, y=0.95, `modif_significant=False`, `linker_significant=False`)
+   - SPIN1: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - SPIN3: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - SPINDOC: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - TADA2A: (x=inf, y=2.60, `modif_significant=True`, `linker_significant=False`)
+   - TAF4: (x=6.52, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - TAF4B: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - TAF7: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - TAF8: (x=inf, y=6.86, `modif_significant=True`, `linker_significant=False`)
+   - TAF9B: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - TBRG1: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - TDP1: (x=inf, y=-0.37, `modif_significant=False`, `linker_significant=True`)
+   - TONSL: (x=-inf, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - UCHL5: (x=inf, y=5.58, `modif_significant=True`, `linker_significant=False`)
+   - VPS72: (x=2.43, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - YEATS4: (x=3.64, y=inf, `modif_significant=True`, `linker_significant=False`)
+   - ZBTB17: (x=inf, y=-0.19, `modif_significant=False`, `linker_significant=True`)
+   - ZBTB7A: (x=inf, y=0.06, `modif_significant=False`, `linker_significant=False`)
+   - ZBTB8A: (x=inf, y=-inf, `modif_significant=False`, `linker_significant=False`)
+   - ZNF335: (x=inf, y=2.65, `modif_significant=False`, `linker_significant=False`)
+   - ZNF592: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+   - ZRANB2: (x=-inf, y=0.27, `modif_significant=False`, `linker_significant=False`)
+   - ZZZ3: (x=inf, y=inf, `modif_significant=False`, `linker_significant=False`)
+        

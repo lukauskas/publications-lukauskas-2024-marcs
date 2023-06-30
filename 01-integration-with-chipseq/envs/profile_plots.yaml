@@ -1,0 +1,10 @@
+name: 'marcs-chipseq-integration-profile-plots'
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - deeptools=3.5.1
+  - pandas=1.3.4
+  - pybedtools=0.8.2
+  - sh=1.13.1

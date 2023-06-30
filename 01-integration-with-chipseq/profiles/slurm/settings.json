@@ -1,0 +1,6 @@
+{
+    "SBATCH_DEFAULTS": "partition=normal_q no-requeue",
+    "CLUSTER_NAME": "",
+    "CLUSTER_CONFIG": "",
+    "ADVANCED_ARGUMENT_CONVERSION": "no"
+}

@@ -1,0 +1,574 @@
+,marcs_gene_label,chip_ms_label,mapped_via
+0,ACIN1 (1),ACIN1,Accession;Gene name
+1,ACIN1 (2),ACIN1,Gene name
+2,ACIN1 (3),ACIN1,Gene name
+3,ACIN1 (4),ACIN1,Gene name
+4,ACTB,ACTB,Accession;Gene name
+5,ACTBL2,ACTBL2,Accession;Gene name
+6,ACTL6A,ACTL6A,Accession;Gene name
+7,"ACT[A1,A2,C1,G2]",ACTA2,Accession;Gene name
+8,ADAR,ADAR,Accession;Gene name
+9,ADNP,ADNP,Accession;Gene name
+10,AHCTF1,AHCTF1,Accession;Gene name
+11,AHNAK,AHNAK,Accession;Gene name
+12,AKAP8,AKAP8,Accession;Gene name
+13,ALDOA/AC093512.2,ALDOA,Accession;Gene name
+14,ALYREF (1),ALYREF,Accession;Gene name
+15,ALYREF (2),ALYREF,Gene name
+16,AP2A1,AP2A1,Accession;Gene name
+17,ARGLU1,ARGLU1,Accession;Gene name
+18,ARID1A,ARID1A,Accession;Gene name
+19,ASPH,ASPH,Accession;Gene name
+20,ATP1A1/ATP1A3,ATP1A1,Accession;Gene name
+21,ATP2A2,ATP2A2,Accession;Gene name
+22,ATP5F1A,ATP5F1A,Accession;Gene name
+23,ATP5F1B,ATP5F1B,Accession;Gene name
+24,BANF1,BANF1,Accession;Gene name
+25,BAZ1A,BAZ1A,Accession;Gene name
+26,BAZ1B,BAZ1B,Accession;Gene name
+27,BCLAF1 (1),BCLAF1,Accession;Gene name
+28,BCLAF1 (2),BCLAF1,Gene name
+29,BOP1,BOP1,Accession;Gene name
+30,BRD1,BRD1,Accession;Gene name
+31,BRD2,BRD2,Accession;Gene name
+32,BRD3,BRD3,Accession;Gene name
+33,BRIX1,BRIX1,Accession;Gene name
+34,BRPF1,BRPF1,Accession;Gene name
+35,BUB3,BUB3,Accession;Gene name
+36,BYSL,BYSL,Accession;Gene name
+37,C7orf50,C7orf50,Accession;Gene name
+38,CALML5,CALML5,Accession;Gene name
+39,CALM[1-3],CALM1,Gene name
+40,CAPZB,CAPZB,Accession;Gene name
+41,CBX3,CBX3,Accession;Gene name
+42,CBX5,CBX5,Accession;Gene name
+43,CCAR1,CCAR1,Accession;Gene name
+44,CCDC47,CCDC47,Accession;Gene name
+45,CDC5L,CDC5L,Accession;Gene name
+46,CENPV (1),CENPV,Accession;Gene name
+47,CENPV (2),CENPV,Gene name
+48,CHD1,CHD1,Accession;Gene name
+49,CHD4,CHD4,Accession;Gene name
+50,CHERP,CHERP,Accession;Gene name
+51,CHTOP,CHTOP,Accession;Gene name
+52,CIRBP,CIRBP,Accession;Gene name
+53,CKAP4,CKAP4,Accession;Gene name
+54,CMAS,CMAS,Accession;Gene name
+55,COL15A1,COL15A1,Accession;Gene name
+56,COL5A1,COL5A1,Accession;Gene name
+57,COPA,COPA,Accession;Gene name
+58,CPSF7,CPSF7,Accession;Gene name
+59,CUL4A,CUL4A,Accession;Gene name
+60,DAZAP1,DAZAP1,Accession;Gene name
+61,DDB1,DDB1,Accession;Gene name
+62,DDOST,DDOST,Accession;Gene name
+63,DDX1,DDX1,Accession;Gene name
+64,DDX17 (1),DDX17,Gene name
+65,DDX17 (2),DDX17,Accession;Gene name
+66,DDX18,DDX18,Accession;Gene name
+67,DDX21,DDX21,Accession;Gene name
+68,DDX23,DDX23,Accession;Gene name
+69,DDX24,DDX24,Accession;Gene name
+70,DDX27,DDX27,Accession;Gene name
+71,DDX39B,DDX39B,Accession;Gene name
+72,DDX3X (1),DDX3X,Accession;Gene name
+73,DDX3X (2),DDX3X,Gene name
+74,DDX42,DDX42,Accession;Gene name
+75,DDX46 (1),DDX46,Gene name
+76,DDX46 (2),DDX46,Accession;Gene name
+77,DDX47,DDX47,Accession;Gene name
+78,DDX5,DDX5,Accession;Gene name
+79,DDX50,DDX50,Accession;Gene name
+80,DDX54,DDX54,Accession;Gene name
+81,DDX56,DDX56,Accession;Gene name
+82,DEK,DEK,Accession;Gene name
+83,DHX15,DHX15,Accession;Gene name
+84,DHX9,DHX9,Accession;Gene name
+85,DKC1,DKC1,Accession;Gene name
+86,DNAJA2,DNAJA2,Accession;Gene name
+87,DNAJC8,DNAJC8,Accession;Gene name
+88,DNAJC9,DNAJC9,Accession;Gene name
+89,DNMT1 (1),DNMT1,Accession;Gene name
+90,DNMT1 (2),DNMT1,Gene name
+91,DNTTIP2,DNTTIP2,Accession;Gene name
+92,DSG1,DSG1,Accession;Gene name
+93,DSP,DSP,Accession;Gene name
+94,DYNLL1,DYNLL1,Accession;Gene name
+95,EBNA1BP2,EBNA1BP2,Accession;Gene name
+96,EEF1A1/EEF1A2,EEF1A1,Accession;Gene name
+97,EFTUD2,EFTUD2,Accession;Gene name
+98,EIF2S3,EIF2S3,Accession;Gene name
+99,EIF4A3,EIF4A3,Accession;Gene name
+100,EIF4G2,EIF4G2,Gene name
+101,EIF6,EIF6,Accession;Gene name
+102,ELAVL1,ELAVL1,Accession;Gene name
+103,EMD,EMD,Accession;Gene name
+104,EPRS,EPRS1,Accession
+105,ERH,ERH,Accession;Gene name
+106,EWSR1 (1),EWSR1,Accession;Gene name
+107,EWSR1 (2),EWSR1,Gene name
+108,EXOSC10,EXOSC10,Accession;Gene name
+109,FAM120A,FAM120A,Accession;Gene name
+110,FAM98A,FAM98A,Accession;Gene name
+111,FBL,FBL,Accession;Gene name
+112,FHL2,FHL2,Accession;Gene name
+113,FHL3,FHL3,Accession;Gene name
+114,FTSJ3,FTSJ3,Accession;Gene name
+115,FUBP3,FUBP3,Accession;Gene name
+116,FUS,FUS,Accession;Gene name
+117,FXR1,FXR1,Accession;Gene name
+118,GAPDH,GAPDH,Accession;Gene name
+119,GAR1,GAR1,Accession;Gene name
+120,GLYR1,GLYR1,Accession;Gene name
+121,GNL2,GNL2,Accession;Gene name
+122,GNL3,GNL3,Accession;Gene name
+123,GTF2I,GTF2I,Accession;Gene name
+124,GTPBP4,GTPBP4,Accession;Gene name
+125,H1F0,H1-0,Accession
+126,H1FX,H1-10,Accession
+127,H2AFV/H2AFZ,H2AZ2,Accession
+128,HDAC1,HDAC1,Accession;Gene name
+129,HDGFL2,HDGFL2,Accession;Gene name
+130,HEATR1,HEATR1,Accession;Gene name
+131,HIST1H1B,H1-5,Accession
+132,"HIST1H2A[B,E]/HIST3H2A",H2AW,Accession
+133,"HIST1H2A[G-M]/HIST2H2A[A3,A4,C]/H2AFJ",H2AC20,Accession
+134,"HIST1H2B[C,D,E,F,G,I]",H2BC4,Accession
+135,"HIST[1H4A,1H4B,1H4C,1H4E,1H4F,1H4H,1H4I,1H4L,2H4A,4H4]",H4C1,Accession
+136,"HIST[2H3A,2H3C,2H3D,3H3]",H3-2,Accession
+137,HLA-A/HLA-C,HLA-A,Accession;Gene name
+138,HLA-A/HLA-C,HLA-C,Accession;Gene name
+139,HMG20A,HMG20A,Accession;Gene name
+140,HMGA1,HMGA1,Accession;Gene name
+141,HMGB1,HMGB1,Accession;Gene name
+142,HMGB3,HMGB3,Accession;Gene name
+143,HMGN1,HMGN1,Accession;Gene name
+144,HMGN2,HMGN2,Accession;Gene name
+145,HNRNPA0,HNRNPA0,Accession;Gene name
+146,HNRNPA1,HNRNPA1,Accession;Gene name
+147,HNRNPA2B1,HNRNPA2B1,Accession;Gene name
+148,HNRNPA3,HNRNPA3,Accession;Gene name
+149,HNRNPAB,HNRNPAB,Gene name
+150,HNRNPC (1),HNRNPC,Gene name
+151,HNRNPC (2),HNRNPC,Accession;Gene name
+152,HNRNPD,HNRNPD,Accession;Gene name
+153,HNRNPDL (1),HNRNPDL,Accession;Gene name
+154,HNRNPDL (2),HNRNPDL,Gene name
+155,HNRNPF,HNRNPF,Accession;Gene name
+156,HNRNPH1,HNRNPH1,Accession;Gene name
+157,HNRNPH2,HNRNPH2,Accession;Gene name
+158,HNRNPH3,HNRNPH3,Accession;Gene name
+159,HNRNPK,HNRNPK,Accession;Gene name
+160,HNRNPL,HNRNPL,Accession;Gene name
+161,HNRNPM (1),HNRNPM,Accession;Gene name
+162,HNRNPM (2),HNRNPM,Gene name
+163,HNRNPR,HNRNPR,Accession;Gene name
+164,HNRNPU,HNRNPU,Accession;Gene name
+165,HNRNPUL1,HNRNPUL1,Accession;Gene name
+166,HNRNPUL2,HNRNPUL2,Accession;Gene name
+167,HP1BP3,HP1BP3,Accession;Gene name
+168,HSPA1A/HSPA1B,HSPA1A,Accession;Gene name
+169,HSPA5,HSPA5,Accession;Gene name
+170,HSPA8,HSPA8,Accession;Gene name
+171,HSPA9,HSPA9,Accession;Gene name
+172,HSPB1,HSPB1,Accession;Gene name
+173,HSPD1,HSPD1,Accession;Gene name
+174,IFI16,IFI16,Accession;Gene name
+175,IGF2BP1,IGF2BP1,Accession;Gene name
+176,IGF2BP3,IGF2BP3,Accession;Gene name
+177,IKBIP,IKBIP,Accession;Gene name
+178,ILF2,ILF2,Accession;Gene name
+179,ILF3,ILF3,Accession;Gene name
+180,ING1,ING1,Accession;Gene name
+181,JUP,JUP,Accession;Gene name
+182,KAT6A,KAT6A,Accession;Gene name
+183,KAT7 (1),KAT7,Accession;Gene name
+184,KAT7 (2),KAT7,Gene name
+185,KDM2A,KDM2A,Accession;Gene name
+186,KHDRBS1,KHDRBS1,Accession;Gene name
+187,KPNA3,KPNA3,Accession;Gene name
+188,KPNA4,KPNA4,Accession;Gene name
+189,KPNB1,KPNB1,Accession;Gene name
+190,KTN1,KTN1,Accession;Gene name
+191,LARP7,LARP7,Accession;Gene name
+192,LEMD2,LEMD2,Accession;Gene name
+193,LEMD3,LEMD3,Accession;Gene name
+194,LGALS7/LGALS7B,LGALS7,Accession;Gene name
+195,LMNA (1),LMNA,Accession;Gene name
+196,LMNA (2),LMNA,Gene name
+197,LMNB1,LMNB1,Accession;Gene name
+198,LMNB2,LMNB2,Accession;Gene name
+199,LMO7,LMO7,Gene name
+200,LRRC59,LRRC59,Accession;Gene name
+201,LSM4,LSM4,Accession;Gene name
+202,LUC7L2/FMC1-LUC7L2,LUC7L2,Accession;Gene name
+203,LUC7L3,LUC7L3,Accession;Gene name
+204,LUZP1,LUZP1,Accession;Gene name
+205,LYAR,LYAR,Accession;Gene name
+206,MATR3,MATR3,Accession;Gene name
+207,MBD1,MBD1,Accession;Gene name
+208,MECP2 (1),MECP2,Accession;Gene name
+209,MECP2 (2),MECP2,Gene name
+210,MFAP1,MFAP1,Accession;Gene name
+211,MOGS,MOGS,Accession;Gene name
+212,MORC3,MORC3,Accession;Gene name
+213,MORF4L2,MORF4L2,Accession;Gene name
+214,MPG,MPG,Accession;Gene name
+215,MTA2,MTA2,Accession;Gene name
+216,MTDH,MTDH,Accession;Gene name
+217,MTREX,MTREX,Accession;Gene name
+218,MYBBP1A,MYBBP1A,Accession;Gene name
+219,MYH9,MYH9,Accession;Gene name
+220,MYL6,MYL6,Accession;Gene name
+221,NAT10,NAT10,Accession;Gene name
+222,NCBP1,NCBP1,Accession;Gene name
+223,NCL (1),NCL,Accession;Gene name
+224,NCL (2),NCL,Gene name
+225,NCOA5,NCOA5,Accession;Gene name
+226,NFIC,NFIC,Accession;Gene name
+227,NHP2,NHP2,Accession;Gene name
+228,NIFK,NIFK,Accession;Gene name
+229,NOC2L,NOC2L,Accession;Gene name
+230,NOC3L,NOC3L,Accession;Gene name
+231,NOL6,NOL6,Accession;Gene name
+232,NOL7,NOL7,Accession;Gene name
+233,NOLC1 (1),NOLC1,Accession;Gene name
+234,NOLC1 (2),NOLC1,Gene name
+235,NOLC1 (3),NOLC1,Gene name
+236,NONO,NONO,Accession;Gene name
+237,NOP16,NOP16,Accession;Gene name
+238,NOP2 (1),NOP2,Accession;Gene name
+239,NOP2 (2),NOP2,Gene name
+240,NOP56,NOP56,Accession;Gene name
+241,NOP58,NOP58,Accession;Gene name
+242,NOP9,NOP9,Accession;Gene name
+243,NPM1,NPM1,Accession;Gene name
+244,NSA2,NSA2,Accession;Gene name
+245,NUDT21,NUDT21,Accession;Gene name
+246,NUMA1 (1),NUMA1,Accession;Gene name
+247,NUMA1 (2),NUMA1,Gene name
+248,NUMA1 (3),NUMA1,Gene name
+249,NUP107,NUP107,Accession;Gene name
+250,NUP133,NUP133,Accession;Gene name
+251,NUP153,NUP153,Accession;Gene name
+252,NUP160,NUP160,Accession;Gene name
+253,NUP88,NUP88,Accession;Gene name
+254,NUP93,NUP93,Accession;Gene name
+255,NUP98,NUP98,Accession;Gene name
+256,PABPC1,PABPC1,Accession;Gene name
+257,PABPC4,PABPC4,Accession;Gene name
+258,PABPN1 (1),PABPN1,Accession;Gene name
+259,PABPN1 (2),PABPN1,Gene name
+260,PAF1,PAF1,Accession;Gene name
+261,PARP1,PARP1,Accession;Gene name
+262,PBRM1,PBRM1,Accession;Gene name
+263,PCBP1,PCBP1,Accession;Gene name
+264,PCBP2,PCBP2,Accession;Gene name
+265,PDCD11,PDCD11,Accession;Gene name
+266,PDS5A,PDS5A,Accession;Gene name
+267,PELP1,PELP1,Accession;Gene name
+268,PGAM1/PGAM2,PGAM1,Accession;Gene name
+269,PGK1,PGK1,Accession;Gene name
+270,PHF2,PHF2,Accession;Gene name
+271,PHF5A,PHF5A,Accession;Gene name
+272,PHF6,PHF6,Accession;Gene name
+273,PHF8 (1),PHF8,Accession;Gene name
+274,PHF8 (2),PHF8,Gene name
+275,PHIP,PHIP,Accession;Gene name
+276,PKM,PKM,Accession;Gene name
+277,PNN,PNN,Accession;Gene name
+278,POLDIP3,POLDIP3,Accession;Gene name
+279,POLR2A,POLR2A,Accession;Gene name
+280,POLR2B,POLR2B,Accession;Gene name
+281,POP1,POP1,Accession;Gene name
+282,PPAN/PPAN-P2RY11,PPAN,Accession;Gene name
+283,PPIA,PPIA,Accession;Gene name
+284,PPP1CA,PPP1CA,Accession;Gene name
+285,PPP2R1A,PPP2R1A,Accession;Gene name
+286,PRDX1/PRDX4,PRDX1,Accession;Gene name
+287,PRDX1/PRDX4,PRDX4,Accession;Gene name
+288,PRKDC,PRKDC,Accession;Gene name
+289,PRPF19,PRPF19,Accession;Gene name
+290,PRPF31,PRPF31,Accession;Gene name
+291,PRPF4,PRPF4,Accession;Gene name
+292,PRPF40A,PRPF40A,Accession;Gene name
+293,PRPF4B,PRPF4B,Accession;Gene name
+294,PRPF6,PRPF6,Accession;Gene name
+295,PRPF8,PRPF8,Accession;Gene name
+296,PSIP1 (1),PSIP1,Accession;Gene name
+297,PSIP1 (2),PSIP1,Gene name
+298,PSPC1,PSPC1,Accession;Gene name
+299,PTBP1,PTBP1,Accession;Gene name
+300,PUF60,PUF60,Accession;Gene name
+301,PWP1,PWP1,Accession;Gene name
+302,QARS1,QARS1,Accession;Gene name
+303,QKI,QKI,Accession;Gene name
+304,RAD50,RAD50,Accession;Gene name
+305,RAE1,RAE1,Accession;Gene name
+306,RALY,RALY,Accession;Gene name
+307,RAN,RAN,Accession;Gene name
+308,RANBP2,RANBP2,Accession;Gene name
+309,RANGAP1,RANGAP1,Accession;Gene name
+310,RARS1,RARS1,Accession;Gene name
+311,RBBP4,RBBP4,Accession;Gene name
+312,RBBP7,RBBP7,Accession;Gene name
+313,RBM14/RBM14-RBM4,RBM14,Accession;Gene name
+314,RBM15,RBM15,Accession;Gene name
+315,RBM22,RBM22,Accession;Gene name
+316,RBM25,RBM25,Accession;Gene name
+317,RBM26,RBM26,Accession;Gene name
+318,RBM28,RBM28,Accession;Gene name
+319,RBM3,RBM3,Accession;Gene name
+320,RBM34,RBM34,Accession;Gene name
+321,RBM39 (1),RBM39,Accession;Gene name
+322,RBM39 (2),RBM39,Gene name
+323,RBM4,RBM4,Accession;Gene name
+324,RBM42,RBM42,Accession;Gene name
+325,RBM8A,RBM8A,Accession;Gene name
+326,RBMX,RBMX,Accession;Gene name
+327,RCC1 (1),RCC1,Accession;Gene name
+328,RCC1 (2),RCC1,Gene name
+329,RCC2,RCC2,Accession;Gene name
+330,RNPS1,RNPS1,Accession;Gene name
+331,RPF2,RPF2,Accession;Gene name
+332,RPL10,RPL10,Accession;Gene name
+333,RPL10A,RPL10A,Accession;Gene name
+334,RPL11,RPL11,Accession;Gene name
+335,RPL12,RPL12,Accession;Gene name
+336,RPL13,RPL13,Accession;Gene name
+337,RPL13A,RPL13A,Accession;Gene name
+338,RPL14,RPL14,Accession;Gene name
+339,RPL15,RPL15,Accession;Gene name
+340,RPL17/RPL17-C18orf32,RPL17,Accession;Gene name
+341,RPL18,RPL18,Accession;Gene name
+342,RPL18A,RPL18A,Accession;Gene name
+343,RPL19,RPL19,Accession;Gene name
+344,RPL21,RPL21,Accession;Gene name
+345,RPL22,RPL22,Accession;Gene name
+346,RPL23,RPL23,Accession;Gene name
+347,RPL23A,RPL23A,Accession;Gene name
+348,RPL24,RPL24,Accession;Gene name
+349,RPL26/RPL26L1,RPL26,Accession;Gene name
+350,RPL27,RPL27,Accession;Gene name
+351,RPL27A,RPL27A,Accession;Gene name
+352,RPL28,RPL28,Accession;Gene name
+353,RPL29,RPL29,Accession;Gene name
+354,RPL3,RPL3,Accession;Gene name
+355,RPL30,RPL30,Accession;Gene name
+356,RPL31,RPL31,Accession;Gene name
+357,RPL32,RPL32,Accession;Gene name
+358,RPL34,RPL34,Accession;Gene name
+359,RPL35,RPL35,Accession;Gene name
+360,RPL35A,RPL35A,Accession;Gene name
+361,RPL36,RPL36,Accession;Gene name
+362,RPL36A/RPL36AL,RPL36A,Accession;Gene name
+363,RPL36A/RPL36AL,RPL36AL,Accession;Gene name
+364,RPL37A,RPL37A,Accession;Gene name
+365,RPL38,RPL38,Accession;Gene name
+366,RPL4,RPL4,Accession;Gene name
+367,RPL5,RPL5,Accession;Gene name
+368,RPL6,RPL6,Accession;Gene name
+369,RPL7,RPL7,Accession;Gene name
+370,RPL7A,RPL7A,Accession;Gene name
+371,RPL7L1,RPL7L1,Accession;Gene name
+372,RPL8,RPL8,Accession;Gene name
+373,RPLP0,RPLP0,Accession;Gene name
+374,RPLP2,RPLP2,Accession;Gene name
+375,RPN1,RPN1,Accession;Gene name
+376,RPN2,RPN2,Accession;Gene name
+377,RPS10/RPS10-NUDT3,RPS10,Accession;Gene name
+378,RPS11,RPS11,Accession;Gene name
+379,RPS12,RPS12,Accession;Gene name
+380,RPS13,RPS13,Accession;Gene name
+381,RPS14,RPS14,Accession;Gene name
+382,RPS15,RPS15,Accession;Gene name
+383,RPS15A,RPS15A,Accession;Gene name
+384,RPS16,RPS16,Accession;Gene name
+385,RPS17,RPS17,Accession;Gene name
+386,RPS18,RPS18,Accession;Gene name
+387,RPS19,RPS19,Accession;Gene name
+388,RPS2,RPS2,Accession;Gene name
+389,RPS20,RPS20,Accession;Gene name
+390,RPS23,RPS23,Accession;Gene name
+391,RPS24,RPS24,Accession;Gene name
+392,RPS25,RPS25,Accession;Gene name
+393,RPS27A,RPS27A,Accession;Gene name
+394,RPS28,RPS28,Accession;Gene name
+395,RPS3,RPS3,Accession;Gene name
+396,RPS3A,RPS3A,Accession;Gene name
+397,RPS4X,RPS4X,Accession;Gene name
+398,RPS5,RPS5,Accession;Gene name
+399,RPS6,RPS6,Accession;Gene name
+400,RPS7,RPS7,Accession;Gene name
+401,RPS8,RPS8,Accession;Gene name
+402,RPS9,RPS9,Accession;Gene name
+403,RPSA,RPSA,Accession;Gene name
+404,RRBP1,RRBP1,Accession;Gene name
+405,RRP1,RRP1,Accession;Gene name
+406,RRP12,RRP12,Accession;Gene name
+407,RRP1B,RRP1B,Accession;Gene name
+408,RRP9,RRP9,Accession;Gene name
+409,RRS1,RRS1,Accession;Gene name
+410,RSF1,RSF1,Accession;Gene name
+411,RSL1D1,RSL1D1,Accession;Gene name
+412,RTCB,RTCB,Accession;Gene name
+413,RTRAF,RTRAF,Accession;Gene name
+414,RUVBL1,RUVBL1,Accession;Gene name
+415,RUVBL2,RUVBL2,Accession;Gene name
+416,S100A11,S100A11,Accession;Gene name
+417,S100A8,S100A8,Accession;Gene name
+418,S100A9,S100A9,Accession;Gene name
+419,SAFB,SAFB,Accession;Gene name
+420,SAP18,SAP18,Accession;Gene name
+421,SARNP,SARNP,Accession;Gene name
+422,SART1,SART1,Accession;Gene name
+423,SDAD1,SDAD1,Accession;Gene name
+424,SEC13,SEC13,Accession;Gene name
+425,SEC22B,SEC22B,Accession;Gene name
+426,SEC61B,SEC61B,Accession;Gene name
+427,SET,SET,Accession;Gene name
+428,SF1 (1),SF1,Accession;Gene name
+429,SF1 (2),SF1,Gene name
+430,SF1 (3),SF1,Gene name
+431,SF3A1,SF3A1,Accession;Gene name
+432,SF3A2,SF3A2,Accession;Gene name
+433,SF3A3,SF3A3,Accession;Gene name
+434,SF3B1,SF3B1,Accession;Gene name
+435,SF3B2,SF3B2,Accession;Gene name
+436,SF3B3,SF3B3,Accession;Gene name
+437,SF3B6,SF3B6,Accession;Gene name
+438,SFN,SFN,Accession;Gene name
+439,SFPQ,SFPQ,Accession;Gene name
+440,SIN3A,SIN3A,Accession;Gene name
+441,SLFN5,SLFN5,Accession;Gene name
+442,SMARCA4 (1),SMARCA4,Accession;Gene name
+443,SMARCA4 (2),SMARCA4,Gene name
+444,SMARCA5,SMARCA5,Accession;Gene name
+445,SMARCC2 (1),SMARCC2,Gene name
+446,SMARCC2 (2),SMARCC2,Accession;Gene name
+447,SMC1A,SMC1A,Accession;Gene name
+448,SMC3,SMC3,Accession;Gene name
+449,SMCHD1,SMCHD1,Accession;Gene name
+450,SMU1,SMU1,Accession;Gene name
+451,SNRNP200,SNRNP200,Accession;Gene name
+452,SNRNP40,SNRNP40,Accession;Gene name
+453,SNRNP70,SNRNP70,Accession;Gene name
+454,SNRPA,SNRPA,Accession;Gene name
+455,SNRPA1,SNRPA1,Accession;Gene name
+456,SNRPB/SNRPN/SNURF,SNRPB,Accession;Gene name
+457,SNRPB2,SNRPB2,Accession;Gene name
+458,SNRPD1,SNRPD1,Accession;Gene name
+459,SNRPD2,SNRPD2,Accession;Gene name
+460,SNRPD3,SNRPD3,Accession;Gene name
+461,SNRPF,SNRPF,Accession;Gene name
+462,SNRPG,SNRPG,Accession;Gene name
+463,SNU13,SNU13,Accession;Gene name
+464,SNW1,SNW1,Accession;Gene name
+465,SON (1),SON,Accession;Gene name
+466,SON (2),SON,Gene name
+467,SPATS2L,SPATS2L,Accession;Gene name
+468,SPIN1,SPIN1,Accession;Gene name
+469,SRP14,SRP14,Accession;Gene name
+470,SRP9,SRP9,Accession;Gene name
+471,SRPRA,SRPRA,Accession;Gene name
+472,SRRM1,SRRM1,Accession;Gene name
+473,SRRM2,SRRM2,Accession;Gene name
+474,SRRT,SRRT,Accession;Gene name
+475,SRSF1,SRSF1,Accession;Gene name
+476,SRSF10,SRSF10,Accession;Gene name
+477,SRSF11,SRSF11,Accession;Gene name
+478,SRSF2,SRSF2,Accession;Gene name
+479,SRSF3,SRSF3,Accession;Gene name
+480,SRSF4,SRSF4,Accession;Gene name
+481,SRSF5,SRSF5,Accession;Gene name
+482,SRSF7,SRSF7,Accession;Gene name
+483,SRSF9,SRSF9,Accession;Gene name
+484,SSB,SSB,Accession;Gene name
+485,SSR4,SSR4,Accession;Gene name
+486,SSRP1,SSRP1,Accession;Gene name
+487,STOM,STOM,Accession;Gene name
+488,STT3A,STT3A,Accession;Gene name
+489,SUB1,SUB1,Accession;Gene name
+490,SUMO2,SUMO2,Accession;Gene name
+491,SUN2,SUN2,Accession;Gene name
+492,SUPT16H,SUPT16H,Accession;Gene name
+493,SUPT5H,SUPT5H,Accession;Gene name
+494,SUPT6H,SUPT6H,Accession;Gene name
+495,SURF4,SURF4,Accession;Gene name
+496,SURF6,SURF6,Accession;Gene name
+497,SYNCRIP,SYNCRIP,Accession;Gene name
+498,TAF15,TAF15,Accession;Gene name
+499,TARDBP/AL109811.3,TARDBP,Accession;Gene name
+500,TBL1XR1,TBL1XR1,Accession;Gene name
+501,TBL2,TBL2,Accession;Gene name
+502,TBL3,TBL3,Accession;Gene name
+503,TCOF1 (1),TCOF1,Accession;Gene name
+504,TCOF1 (2),TCOF1,Gene name
+505,"TEAD[1,2,4]",TEAD1,Accession;Gene name
+506,THRAP3,THRAP3,Accession;Gene name
+507,THYN1,THYN1,Accession;Gene name
+508,TIA1/TIAL1,TIA1,Gene name
+509,TIA1/TIAL1,TIAL1,Accession;Gene name
+510,TMA16,TMA16,Accession;Gene name
+511,TMEM214,TMEM214,Accession;Gene name
+512,TMPO (1),TMPO (1),Gene name
+513,TMPO (1),TMPO (2),Accession;Gene name
+514,TMPO (2),TMPO (1),Accession;Gene name
+515,TMPO (2),TMPO (2),Gene name
+516,TMPO (3),TMPO (1),Gene name
+517,TMPO (3),TMPO (2),Gene name
+518,TOP1,TOP1,Accession;Gene name
+519,TOP2A,TOP2A,Accession;Gene name
+520,TOP2B (1),TOP2B,Gene name
+521,TOP2B (2),TOP2B,Accession;Gene name
+522,TOR1AIP1 (1),TOR1AIP1,Accession;Gene name
+523,TOR1AIP1 (2),TOR1AIP1,Gene name
+524,TPR,TPR,Accession;Gene name
+525,TRA2A,TRA2A,Accession;Gene name
+526,TRA2B,TRA2B,Accession;Gene name
+527,TRAM1,TRAM1,Accession;Gene name
+528,TRAM2,TRAM2,Accession;Gene name
+529,TRIM28,TRIM28,Accession;Gene name
+530,TRIP12 (1),TRIP12,Accession;Gene name
+531,TRIP12 (2),TRIP12,Gene name
+532,TRIP12 (3),TRIP12,Gene name
+533,"TUBA[1A,1B,1C,4A]",TUBA1A,Accession;Gene name
+534,"TUBA[1A,1B,1C,4A]",TUBA1C,Accession;Gene name
+535,"TUBA[1A,1B,1C,4A]",TUBA4A,Accession;Gene name
+536,"TUBB/TUBB[2A,2B]",TUBB,Accession;Gene name
+537,"TUBB/TUBB[2A,2B]",TUBB2A,Accession;Gene name
+538,U2AF1/U2AF1L5,U2AF1,Accession;Gene name
+539,U2AF2,U2AF2,Accession;Gene name
+540,U2SURP,U2SURP,Accession;Gene name
+541,UBAP2L,UBAP2L,Accession;Gene name
+542,UBTF (1),UBTF,Accession;Gene name
+543,UBTF (2),UBTF,Gene name
+544,UHRF1,UHRF1,Accession;Gene name
+545,UHRF2,UHRF2,Accession;Gene name
+546,USP7,USP7,Accession;Gene name
+547,UTP18,UTP18,Accession;Gene name
+548,VIM,VIM,Accession;Gene name
+549,VRK1,VRK1,Accession;Gene name
+550,WDR18,WDR18,Accession;Gene name
+551,WDR43,WDR43,Accession;Gene name
+552,WDR5,WDR5,Accession;Gene name
+553,WDR82,WDR82,Accession;Gene name
+554,XPC,XPC,Accession;Gene name
+555,XPO1,XPO1,Accession;Gene name
+556,XRCC5,XRCC5,Accession;Gene name
+557,XRCC6,XRCC6,Accession;Gene name
+558,XRN2,XRN2,Accession;Gene name
+559,YBX1,YBX1,Accession;Gene name
+560,YLPM1 (1),YLPM1,Accession;Gene name
+561,YLPM1 (2),YLPM1,Gene name
+562,YLPM1 (3),YLPM1,Gene name
+563,ZC3H18 (1),ZC3H18,Gene name
+564,ZC3H18 (2),ZC3H18,Accession;Gene name
+565,ZC3HAV1,ZC3HAV1,Accession;Gene name
+566,ZFR,ZFR,Accession;Gene name
+567,ZMYM3,ZMYM3,Accession;Gene name
+568,ZMYND11,ZMYND11,Accession;Gene name
+569,ZNF326,ZNF326,Accession;Gene name
+570,ZNF512,ZNF512,Accession;Gene name
+571,ZNF512B,ZNF512B,Accession;Gene name
+572,ZRANB2,ZRANB2,Accession;Gene name

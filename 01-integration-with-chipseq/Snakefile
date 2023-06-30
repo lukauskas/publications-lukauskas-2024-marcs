@@ -1,0 +1,215 @@
+from snakemake.utils import min_version
+
+# Needed for subworkflow support
+min_version("6.0")
+
+configfile: 'config/config.yaml'
+
+import pathlib
+import os
+import pandas as pd
+import itertools
+
+# Add some global wrappers to common config parameters
+
+DATA_DIR = pathlib.Path(config['DATA_DIR'])
+OUTPUT_DIR = pathlib.Path(config['OUTPUT_DIR'])
+INTERIM_OUTPUT_DIR = pathlib.Path(config['INTERIM_OUTPUT_DIR'])
+
+MARCS_DATA_DIR = DATA_DIR / 'raw' / 'marcs'
+BLACKLIST_FILE = DATA_DIR / 'raw' / 'blacklist' / 'hg38-blacklist.v2.bed.gz'
+
+ANALYSIS_CELL_LINES = config['ANALYSIS_CELL_LINES']
+ANALYSIS_CELL_LINES_CONSTRAINTS = '|'.join(ANALYSIS_CELL_LINES)
+
+wildcard_constraints:
+    cell_line=ANALYSIS_CELL_LINES_CONSTRAINTS,
+
+# ------------------------------------------------------------------------------------------------------------------------
+include: 'rules/data_sources/marcs.smk'
+include: 'rules/data_sources/encode.smk'
+include: 'rules/data_sources/genome.smk'
+include: 'rules/data_sources/roadmap.smk'
+
+include: 'rules/bedstats/matrix.smk'
+include: 'rules/bedstats/stats.smk'
+include: 'rules/analysis/common.smk'
+include: 'rules/analysis/consolidate_bedstats.smk'
+include: 'rules/analysis/make_plots.smk'
+include: 'rules/analysis/pairwise_factors.smk'
+include: 'rules/analysis/correlate_with_interactions.smk'
+
+include: 'rules/plots/deeptools.smk'
+# -------------------------------------------------------------------------------------------------------------------
+
+TARGETS = []
+
+# MARCS
+TARGETS.append(rules.marcs_table_s1.output)
+TARGETS.append(rules.marcs_table_s3.output)
+
+TARGETS.extend(
+    expand(
+        rules.encode_dataset.output,
+        filetype=['bed', 'bigWig'],
+        cell_line=ANALYSIS_CELL_LINES,
+        dataset=ALL_ENCODE_DATASETS,
+        )
+)
+
+
+TARGETS.extend(
+    expand(
+        rules.downloaded_encode_dataset.output,
+        filetype=['bed'],
+        cell_line=ANALYSIS_CELL_LINES,
+        dataset=ALL_ENCODE_DATASETS,
+        )
+)
+
+TARGETS.extend(
+    expand(
+        rules.peak_overlap_with_genome_windows_matrix.output,
+        cell_line=ANALYSIS_CELL_LINES,
+        filetype='bed',
+        bin_size=config['BIN_SIZES'],
+        dataset=list(ALL_ENCODE_DATASETS) + ['roadmap_chromatin_state'],
+    )
+)
+
+TARGETS.extend(
+    expand(
+        rules.statistics_within_peak_overlap_with_genome_windows_matrix.output,
+        cell_line=ANALYSIS_CELL_LINES,
+        filetype='bed',
+        bin_size=config['BIN_SIZES'],
+        pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+        min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+    )
+)
+
+TARGETS.extend(
+    expand(
+        rules.analysis_consolidate_bedstats.output,
+        cell_line=ANALYSIS_CELL_LINES,
+        filetype='bed',
+        bin_size=config['BIN_SIZES'],
+        pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+        min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+    )
+)
+
+TARGETS.extend(
+    expand(
+        rules.analysis_correlate_with_interactions.output,
+        cell_line=ANALYSIS_CELL_LINES,
+        filetype='bed',
+        bin_size=config['BIN_SIZES'],
+        pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+        min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+    )
+)
+
+TARGETS.extend(
+    expand(
+        rules.analysis_summarise_bedstats_results.output,
+        cell_line=ANALYSIS_CELL_LINES,
+        filetype='bed',
+        bin_size=config['BIN_SIZES'],
+        pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+        min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+    )
+)
+
+for state_a, state_b in itertools.combinations([
+    '1_TssA', '2_TssAFlnk', '3_TxFlnk', '4_Tx', '5_TxWk', 
+    '6_EnhG', '7_Enh', '8_ZNF/Rpts', '9_Het', '10_TssBiv', 
+    '11_BivFlnk', '12_EnhBiv', '13_ReprPC', '14_ReprPCWk', '15_Quies'], 
+    2):
+
+    TARGETS.extend(
+        expand(
+            rules.analysis_pairwise_states.output,
+            cell_line=ANALYSIS_CELL_LINES,
+            factor_x=state_a,
+            factor_y=state_b,
+            filetype='bed',
+            bin_size=config['BIN_SIZES'],
+            pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+            min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+        )
+    )
+
+SPECIAL_FACTORS = {
+    
+    ('K562', 'H3K4me1'): ['H3K4me1-K562-ENCFF540NGG', 'H3K4me1-K562-ENCFF759NWD'],
+    ('K562', 'H3K4me3'): ['H3K4me3-K562-ENCFF689QIJ', 'H3K4me3-K562-ENCFF706WUF','H3K4me3-K562-ENCFF885FQN', 'H3K4me3-K562-ENCFF122CSI'],
+
+    ('K562', 'H2AFZ'): ['H2AFZ-K562-ENCFF213OTI'],
+
+    ('K562', 'H3K9ac'): ['H3K9ac-K562-ENCFF148UQI', 'H3K9ac-K562-ENCFF891CHI'],
+    ('K562', 'H3K27ac'): ['H3K27ac-K562-ENCFF864OSZ'],
+    
+    
+    ('HepG2', 'H3K4me1'): ['H3K4me1-HepG2-ENCFF413EGR'],
+    ('HepG2', 'H3K4me3'): ['H3K4me3-HepG2-ENCFF549DKP', 'H3K4me3-HepG2-ENCFF637QOV','H3K4me3-HepG2-ENCFF982DUT'],
+    
+    ('HepG2', 'H2AFZ'): ['H2AFZ-HepG2-ENCFF303VCJ'],
+    ('HepG2', 'H3K9ac'): ['H3K9ac-HepG2-ENCFF044QMC'],
+    ('HepG2', 'H3K27ac'): ['H3K27ac-HepG2-ENCFF749VEQ'],
+
+}
+
+# Pairwise combination groups for ChIPs (not just chromatin states)
+for cell_line, factors_x, factors_y in [
+    ('K562', SPECIAL_FACTORS['K562', 'H3K4me3'],  SPECIAL_FACTORS['K562', 'H3K4me1']),
+    ('K562', SPECIAL_FACTORS['K562', 'H3K9ac'],  SPECIAL_FACTORS['K562', 'H2AFZ']),
+    ('K562', SPECIAL_FACTORS['K562', 'H3K27ac'],  SPECIAL_FACTORS['K562', 'H2AFZ']),
+
+    ('HepG2', SPECIAL_FACTORS['HepG2', 'H3K4me3'], SPECIAL_FACTORS['HepG2', 'H3K4me1']),
+    ('HepG2', SPECIAL_FACTORS['HepG2', 'H3K9ac'],  SPECIAL_FACTORS['HepG2', 'H2AFZ']),
+    ('HepG2', SPECIAL_FACTORS['HepG2', 'H3K27ac'],  SPECIAL_FACTORS['HepG2', 'H2AFZ']),
+]:
+    for factor_x, factor_y in itertools.product(factors_x, factors_y):
+        TARGETS.extend(
+            expand(
+                rules.analysis_pairwise_datasets.output,
+                cell_line=cell_line,
+                factor_x=factor_x,
+                factor_y=factor_y,
+                filetype='bed',
+                bin_size=config['BIN_SIZES'],
+                pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+                min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+            )
+        )
+
+# And averages of special factors
+
+for special_factor_x, special_factor_y in [
+    (('K562', 'H3K4me3'), ('K562', 'H3K4me1')),
+    (('K562', 'H3K9ac'), ('K562', 'H2AFZ')),
+    (('K562', 'H3K27ac'), ('K562', 'H2AFZ')), 
+    
+    (('HepG2', 'H3K4me3'), ('HepG2', 'H3K4me1')),
+    (('HepG2', 'H3K9ac'), ('HepG2', 'H2AFZ')),
+    (('HepG2', 'H3K27ac'), ('HepG2', 'H2AFZ')), 
+]:
+
+    # Cell lines should match
+    assert special_factor_x[0] == special_factor_y[0]
+    TARGETS.extend(
+            expand(
+                rules.analysis_pairwise_special_factors.output,
+                cell_line=special_factor_x[0],
+                factor_x=special_factor_x[1],
+                factor_y=special_factor_y[1],
+                filetype='bed',
+                bin_size=config['BIN_SIZES'],
+                pseudocount=config['STATISTICS_PSEUDOCOUNTS'],
+                min_periods=config['MIN_PERIODS_FOR_CORRELATIONS'],
+            )
+        )
+
+rule all:
+    input: TARGETS

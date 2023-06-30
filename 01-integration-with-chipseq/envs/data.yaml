@@ -1,0 +1,34 @@
+name: 'marcs-chipseq-integration-bigwigs-data'
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - adjusttext=0.7.3.1
+  - dask=2021.9.1
+  - h5py=3.6.0
+  - hdf5=1.12.1
+  - ipympl=0.8.2
+  - jupyterlab=3.1.7
+  - matplotlib=3.4.3
+  - mplcursors=0.5.1
+  - mscorefonts=0.0.1
+  - networkx=2.6.3
+  - numpy=1.21.2
+  - palettable=3.3.0
+  - pandas=1.3.3
+  - pingouin=0.5.1
+  - pygmo=2.18.0
+  - pytables=3.6.1
+  - scikit-learn=1.0
+  - scipy=1.7.1
+  - seaborn=0.11.2
+  - statannot=0.2.3
+  - statsmodels=0.12.2
+  - tqdm=4.62.1
+  - xlsxwriter=3.0.2
+  - pip
+  - pip:
+    - fancyimpute==0.7.0
+    - statannotations==0.4.3
+  

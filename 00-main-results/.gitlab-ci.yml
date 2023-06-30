@@ -1,0 +1,27 @@
+before_script:
+  - docker info
+
+stages:
+  - build
+
+build_analysis_image:
+  before_script:
+    - echo "Gathering fonts"
+    # Failure at either of the two lines below means there is no Helvetica font installed in runner
+    # Install it so it is detectable with `fc-list`
+    - for f in $(fc-list Helvetica file | sed 's/://g'); do cp $f ./fonts/; done
+    - ls ./fonts/*.ttf || exit 1
+  stage:
+    build
+  script:
+    - echo "Building commit ${CI_COMMIT_SHORT_SHA}"
+    - ./run.sh
+    - echo "Build complete, checking outputs"
+    - ./compare_against_expected_excels.sh
+  artifacts:
+    paths:
+      - output/sorted
+      - output/marcs.log
+      - output/r-packages.txt
+      - output/python-packages.txt
+    expire_in: 1 day
